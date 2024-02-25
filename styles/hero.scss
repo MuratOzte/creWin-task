@@ -1,0 +1,19 @@
+$blue-color: #263fa3;
+$gray-text: #989898;
+
+.hero-section-texts {
+
+    width: 40%;
+
+    .primary-text {
+        font-size: 3rem;
+    }
+    .secondary-text {
+        font-size: 3rem;
+        color: $blue-color;
+    }
+
+    .gray-text {
+        color: $gray-text;
+    }
+}
