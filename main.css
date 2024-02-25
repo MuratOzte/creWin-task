@@ -167,6 +167,18 @@ nav ul li a.is-active {
   background-color: transparent;
   padding: 2rem;
 }
+.search-section .button {
+  background-color: #132742;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+}
+.search-section .button button {
+  border: none;
+  background-color: transparent;
+  color: #ffffff;
+}
 
 body {
   margin: 0;
