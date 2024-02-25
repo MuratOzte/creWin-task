@@ -1,19 +1,105 @@
 $blue-color: #263fa3;
 $gray-text: #989898;
 
-.hero-section-texts {
+@mixin margin-x($value) {
+    margin-left: $value;
+    margin-right: $value;
+}
 
-    width: 40%;
+.hero-section {
+    margin-top: 2rem;
+    @include margin-x(5%);
+    display: flex;
+    justify-content: flex-start;
+    gap: 8rem;
+    .hero-section-texts {
+        width: 40%;
 
-    .primary-text {
-        font-size: 3rem;
+        .primary-text {
+            font-size: 3.5rem;
+        }
+        .secondary-text {
+            font-size: 3.5rem;
+            color: $blue-color;
+        }
+
+        .gray-text {
+            font-size: 1.4rem;
+            color: $gray-text;
+            line-height: 2rem;
+        }
     }
-    .secondary-text {
-        font-size: 3rem;
-        color: $blue-color;
+    .hero-footer {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 3rem;
+        gap: 3rem;
+        button {
+            background-color: #ff8032;
+            border-radius: 0.7rem;
+            border: none;
+            padding: 0rem 3rem;
+            color: white;
+        }
+        .video-button {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 1rem;
+            img {
+                width: 1.2rem;
+                height: 1.2rem;
+                border: 2px solid gray;
+                padding: 12px;
+                border-radius: 45%;
+                background-color: #ff8032;
+            }
+            .watch-video-text {
+                font-size: 1.2rem;
+                font-weight: 600;
+                color: black;
+            }
+        }
     }
-
-    .gray-text {
-        color: $gray-text;
+    img {
+        width: 26%;
+    }
+    .header-info {
+        display: flex;
+        align-items: center;
+        .infos {
+            display: flex;
+            flex-direction: column;
+            .info {
+                display: flex;
+                flex-direction: row;
+                gap: 1rem;
+                margin-bottom: 2rem;
+                align-items: center;
+                img {
+                    padding: 1rem;
+                    width: 2rem;
+                    height: 2rem;
+                    border-radius: 10%;
+                    background-color: #ffffff;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                }
+                .specs {
+                    display: flex;
+                    flex-direction: column;
+                    .title {
+                        font-size: 1.4rem;
+                        font-weight: 600;
+                        margin: 0;
+                        height: min-content;
+                    }
+                    .description {
+                        font-size: 1.2rem;
+                        margin: 0;
+                        color: $gray-text;
+                    }
+                }
+            }
+        }
     }
 }
