@@ -11,29 +11,24 @@ $gray-text: #989898;
 }
 
 .top-categories {
-    margin: 4rem 4rem 1rem 4rem;
+    margin: 4rem 0 2rem 3rem;
+
     .top-categories-cards {
         width: calc(100% - 4rem);
         display: grid;
-        grid-gap: 1rem;
+        grid-gap: 1.5rem 2.5rem;
         grid-template-columns: auto auto auto;
         grid-template-rows: auto auto auto;
-        background-color: #fff;
+        background-color: #fafafa;
         color: #444;
-        .wrapper {
-            display: grid;
-            grid-gap: 10px;
-            grid-template-columns: auto auto auto auto auto;
-            background-color: #fff;
-            color: #444;
-        }
-
         .card {
-            background-color: #444;
-            color: #fff;
+            background: linear-gradient(to top, #4f4f4f, #fafafa);
+            color: #fafafa;
             border-radius: 5px;
             padding: 7rem;
             font-size: 150%;
+            position: relative;
+            border-radius: 2rem;
         }
 
         .a {
@@ -60,6 +55,38 @@ $gray-text: #989898;
             grid-column: 5;
             grid-row: 2;
         }
+        .badge {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background-color: #fafafa;
+            color: $orange;
+            padding: 5px;
+            width: min-content;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            border-radius: 35%;
+            box-shadow: 0px 5px 10px 0px #0000003a;
+        }
+        .category-title {
+            position: absolute;
+            bottom: 25px;
+            left: 10px;
+            font-weight: bold;
+        }
+        .category-dealer {
+            position: absolute;
+            bottom: 10px;
+            left: 13px;
+            font-size: 0.8rem;
+            color: lighten($color: $gray-text, $amount: 25%);
+        }
+        img {
+            position: absolute;
+            top: 15px;
+            right: 40px;
+        }
     }
     .top-categories-header {
         display: flex;
@@ -73,6 +100,7 @@ $gray-text: #989898;
             display: flex;
             align-items: center;
             gap: 1rem;
+            margin-right: 3rem;
             .prev-button {
                 background-color: #fafafa;
                 border: none;
