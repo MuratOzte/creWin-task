@@ -11,7 +11,10 @@ $gray-text: #989898;
 }
 
 .top-categories {
-    margin: 4rem 0 2rem 3rem;
+    margin: 2rem 0 2rem 3rem;
+    h1 {
+        font-size: 3rem;
+    }
 
     .top-categories-cards {
         width: calc(100% - 4rem);
