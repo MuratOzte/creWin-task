@@ -249,9 +249,37 @@ nav ul li a.is-active {
   display: flex;
   flex-direction: column;
 }
-.recently-added-section .recently-added-text {
-  margin: 1rem 4rem 0rem 4rem;
+.recently-added-section .recently-added-header {
+  display: flex;
+  flex-direction: row;
+  margin: 0.5rem 4rem 0rem 4rem;
+  justify-content: space-between;
+}
+.recently-added-section .recently-added-header .recently-added-text {
   font-size: 2.5rem;
+}
+.recently-added-section .recently-added-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.recently-added-section .recently-added-buttons .prev-button {
+  background-color: #fafafa;
+  border: none;
+  padding: 1rem;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2274509804);
+  font-size: larger;
+}
+.recently-added-section .recently-added-buttons .next-button {
+  background-color: #ff7b29;
+  border: none;
+  padding: 1rem;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2274509804);
+  font-size: larger;
+  color: white;
+  transition: all 0.3s ease-in-out;
 }
 .recently-added-section .recent-items {
   display: flex;
@@ -260,7 +288,7 @@ nav ul li a.is-active {
   height: 90%;
 }
 .recently-added-section .recent-items .recent-item {
-  margin: 2rem 4rem 0 4rem;
+  margin: 0 4rem 0 4rem;
   background-color: #ffffff;
   padding: 2rem 2rem 0 2rem;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1019607843);

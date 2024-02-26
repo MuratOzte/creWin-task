@@ -17,9 +17,38 @@ $blue: #0cb6ff;
     display: flex;
     flex-direction: column;
 
-    .recently-added-text {
-        margin: 1rem 4rem 0rem 4rem;
-        font-size: 2.5rem;
+    .recently-added-header {
+        display: flex;
+        flex-direction: row;
+        margin: 0.5rem 4rem 0rem 4rem;
+        justify-content: space-between;
+        .recently-added-text {
+            font-size: 2.5rem;
+        }
+    }
+
+    .recently-added-buttons {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        .prev-button {
+            background-color: #fafafa;
+            border: none;
+            padding: 1rem;
+            border-radius: 50%;
+            box-shadow: 0px 0px 10px 0px #0000003a;
+            font-size: larger;
+        }
+        .next-button {
+            background-color: #ff7b29;
+            border: none;
+            padding: 1rem;
+            border-radius: 50%;
+            box-shadow: 0px 0px 10px 0px #0000003a;
+            font-size: larger;
+            color: white;
+            transition: all 0.3s ease-in-out;
+        }
     }
 
     .recent-items {
@@ -28,7 +57,7 @@ $blue: #0cb6ff;
         justify-content: space-between;
         height: 90%;
         .recent-item {
-            margin: 2rem 4rem 0 4rem;
+            margin: 0 4rem 0 4rem;
             background-color: $white;
             padding: 2rem 2rem 0 2rem;
             box-shadow: 0px 0px 10px 0px #0000001a;
@@ -64,7 +93,7 @@ $blue: #0cb6ff;
             }
             .recent-footer {
                 @include row-beetween-center();
-                .bidding-time{
+                .bidding-time {
                     color: $gray-text;
                 }
             }
