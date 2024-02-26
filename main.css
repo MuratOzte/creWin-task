@@ -146,7 +146,8 @@ nav ul li a.is-active {
   border-radius: 24px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 1rem 3rem;
-  margin-top: 10rem;
+  margin-top: 7.5rem;
+  height: 3.2rem;
   margin-left: 2rem;
   margin-right: 2rem;
 }
@@ -247,39 +248,61 @@ nav ul li a.is-active {
 .recently-added-section {
   display: flex;
   flex-direction: column;
-  width: min-content;
 }
-.recently-added-section .image-container {
-  background-color: red;
-  width: min-content;
+.recently-added-section .recently-added-text {
+  margin: 1rem 4rem 0rem 4rem;
+  font-size: 2.5rem;
+}
+.recently-added-section .recent-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 90%;
+}
+.recently-added-section .recent-items .recent-item {
+  margin: 2rem 4rem 0 4rem;
+  background-color: #ffffff;
+  padding: 2rem 2rem 0 2rem;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1019607843);
+  border-radius: 1rem;
+}
+.recently-added-section .recent-items .recent-item .image-container {
+  background-color: #fafafa;
   padding: 1rem 6rem;
+  height: 40%;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1019607843);
+  border-radius: 1rem;
 }
-.recently-added-section .image-container img {
+.recently-added-section .recent-items .recent-item .image-container img {
   width: 120px;
 }
-.recently-added-section .price-action {
+.recently-added-section .recent-items .recent-item .price-action {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-.recently-added-section .price-action button {
+.recently-added-section .recent-items .recent-item .price-action button {
   padding: 0;
   height: min-content;
   padding: 0.8rem;
   border-radius: 0.7rem;
   background-color: transparent;
-  color: blue;
-  border-color: blue;
+  color: #0cb6ff;
+  border-color: #0cb6ff;
+  font-size: large;
 }
-.recently-added-section .datas p {
+.recently-added-section .recent-items .recent-item .datas p {
   color: #989898;
 }
-.recently-added-section .recent-footer {
+.recently-added-section .recent-items .recent-item .recent-footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+.recently-added-section .recent-items .recent-item .recent-footer .bidding-time {
+  color: #989898;
 }
 
 body {

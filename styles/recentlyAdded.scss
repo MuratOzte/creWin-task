@@ -1,4 +1,10 @@
 $gray-text: #989898;
+$white: #ffffff;
+$blue: #0cb6ff;
+@mixin margin-x($x) {
+    margin-left: $x;
+    margin-right: $x;
+}
 
 @mixin row-beetween-center {
     display: flex;
@@ -10,33 +16,58 @@ $gray-text: #989898;
 .recently-added-section {
     display: flex;
     flex-direction: column;
-    width: min-content;
-    .image-container {
-        background-color: red;
-        width: min-content;
-        padding: 1rem 6rem;
-        img {
-            width: 120px;
-        }
+
+    .recently-added-text {
+        margin: 1rem 4rem 0rem 4rem;
+        font-size: 2.5rem;
     }
-    .price-action {
-        @include row-beetween-center();
-        button {
-            padding: 0;
-            height: min-content;
-            padding: 0.8rem;
-            border-radius: 0.7rem;
-            background-color: transparent;
-            color: blue;
-            border-color: blue;
+
+    .recent-items {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 90%;
+        .recent-item {
+            margin: 2rem 4rem 0 4rem;
+            background-color: $white;
+            padding: 2rem 2rem 0 2rem;
+            box-shadow: 0px 0px 10px 0px #0000001a;
+            border-radius: 1rem;
+            .image-container {
+                background-color: #fafafa;
+                // width: min-content;
+                padding: 1rem 6rem;
+                height: 40%;
+                box-shadow: 0px 0px 10px 0px #0000001a;
+                border-radius: 1rem;
+                img {
+                    width: 120px;
+                }
+            }
+            .price-action {
+                @include row-beetween-center();
+                button {
+                    padding: 0;
+                    height: min-content;
+                    padding: 0.8rem;
+                    border-radius: 0.7rem;
+                    background-color: transparent;
+                    color: $blue;
+                    border-color: $blue;
+                    font-size: large;
+                }
+            }
+            .datas {
+                p {
+                    color: $gray-text;
+                }
+            }
+            .recent-footer {
+                @include row-beetween-center();
+                .bidding-time{
+                    color: $gray-text;
+                }
+            }
         }
-    }
-    .datas {
-        p {
-            color: $gray-text;
-        }
-    }
-    .recent-footer {
-        @include row-beetween-center();
     }
 }
