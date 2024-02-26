@@ -409,6 +409,11 @@ nav ul li a.is-active {
   position: absolute;
   top: 15px;
   right: 40px;
+  height: 80%;
+  filter: contrast(0.7) brightness(1.2);
+}
+.top-categories .top-categories-cards .statue {
+  height: 90%;
 }
 .top-categories .top-categories-header {
   display: flex;
