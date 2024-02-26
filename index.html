@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
         <link rel="stylesheet" href="main.css" />
+        <script src="select.js" defer></script>
     </head>
     <body>
         <nav>
@@ -67,43 +68,69 @@
         <div class="search-section">
             <div class="category">
                 <p>Location</p>
-                <select>
-                    <option value="1">Norway</option>
-                    <option value="2">USA</option>
-                    <option value="3">UK</option>
-                    <option value="4">Germany</option>
-                </select>
+                <div class="custom-select" style="width: auto">
+                    <select>
+                        <option value="1">Norway</option>
+                        <option value="2">USA</option>
+                        <option value="3">UK</option>
+                        <option value="4">Germany</option>
+                    </select>
+                </div>
             </div>
             <div class="category">
                 <p>Religion</p>
-                <select>
-                    <option value="1">Asatro</option>
-                    <option value="2">Islam</option>
-                    <option value="3">Judaism</option>
-                    <option value="4">Hinduism</option>
-                </select>
+                <div class="custom-select" style="width: auto">
+                    <select>
+                        <option value="1">Asatro</option>
+                        <option value="2">Islam</option>
+                        <option value="3">Judaism</option>
+                        <option value="4">Hinduism</option>
+                    </select>
+                </div>
             </div>
             <div class="category">
                 <p>Year</p>
-                <select>
-                    <option value="1">793 AD</option>
-                    <option value="2">100 AD</option>
-                    <option value="3">425 BC</option>
-                    <option value="4">256 AD</option>
-                </select>
+                <div class="custom-select" style="width: auto">
+                    <select>
+                        <option value="1">793 AD</option>
+                        <option value="2">100 AD</option>
+                        <option value="3">42 BC</option>
+                        <option value="4">256 AD</option>
+                    </select>
+                </div>
             </div>
             <div class="category">
                 <p>Type</p>
-                <select>
-                    <option value="1">Weapons</option>
-                    <option value="2">Cup</option>
-                    <option value="3">Sculpture</option>
-                    <option value="4">Painting</option>
-                </select>
+                <div class="custom-select">
+                    <select>
+                        <option value="1">Weapons</option>
+                        <option value="2">Cup</option>
+                        <option value="3">Sculpture</option>
+                        <option value="4">Painting</option>
+                    </select>
+                </div>
             </div>
             <div class="button">
                 <img src="assets/search-normal.svg" />
                 <button>Search</button>
+            </div>
+        </div>
+        <div class="recently-added-section">
+            <h1>Recently Added</h1>
+            <div class="image-container">
+                <img src="assets/vase.svg" />
+            </div>
+            <div class="datas">
+                <h3>Data 1</h3>
+                <p>Year:1192 | Weapons</p>
+            </div>
+            <div class="price-action">
+                <h1>$ 895.50</h1>
+                <button>View Details</button>
+            </div>
+            <div class="recent-footer">
+                <h6>12 bidf so far.</h6>
+                <h6>Bidding closes in 12 Days</h6>
             </div>
         </div>
     </body>

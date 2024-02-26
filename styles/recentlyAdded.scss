@@ -1,0 +1,42 @@
+$gray-text: #989898;
+
+@mixin row-beetween-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recently-added-section {
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+    .image-container {
+        background-color: red;
+        width: min-content;
+        padding: 1rem 6rem;
+        img {
+            width: 120px;
+        }
+    }
+    .price-action {
+        @include row-beetween-center();
+        button {
+            padding: 0;
+            height: min-content;
+            padding: 0.8rem;
+            border-radius: 0.7rem;
+            background-color: transparent;
+            color: blue;
+            border-color: blue;
+        }
+    }
+    .datas {
+        p {
+            color: $gray-text;
+        }
+    }
+    .recent-footer {
+        @include row-beetween-center();
+    }
+}

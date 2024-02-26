@@ -34,14 +34,25 @@
     }
     .button {
         background-color: #132742;
-        padding: 1.5rem 2rem;
+        padding: 1.2rem 2rem;
         border-radius: 1rem;
         display: flex;
         align-items: center;
-        button{
+        cursor: pointer;
+        button {
+            cursor: pointer;
             border: none;
             background-color: transparent;
             color: #ffffff;
         }
+    }
+}
+
+.js-example-responsive {
+    background-color: transparent;
+    border: none;
+    padding: 1.5rem;
+    option {
+        background-color: transparent;
     }
 }
