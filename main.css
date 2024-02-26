@@ -248,6 +248,7 @@ nav ul li a.is-active {
 .recently-added-section {
   display: flex;
   flex-direction: column;
+  transform: scale(0.9);
 }
 .recently-added-section .recently-added-header {
   display: flex;
@@ -504,6 +505,7 @@ body {
   padding: 0;
   font-family: "Roboto", sans-serif;
   background-color: #fafafa;
+  scroll-snap-type: y mandatory;
 }
 
 /*# sourceMappingURL=main.css.map */

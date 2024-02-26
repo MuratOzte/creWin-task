@@ -16,6 +16,7 @@ $blue: #0cb6ff;
 .recently-added-section {
     display: flex;
     flex-direction: column;
+    transform: scale(0.9);
 
     .recently-added-header {
         display: flex;
