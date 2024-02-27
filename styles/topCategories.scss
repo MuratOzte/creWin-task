@@ -14,6 +14,11 @@ $gray-text: #989898;
     margin: 2rem 0 2rem 3rem;
     h1 {
         font-size: 3rem;
+        @media screen and (max-width: 768px) {
+            font-size: 2rem;
+            overflow: visible;
+            width: max-content;
+        }
     }
 
     .top-categories-cards {
@@ -110,7 +115,7 @@ $gray-text: #989898;
             align-items: center;
             gap: 1rem;
             margin-right: 3rem;
-            .prev-button {
+            .categories-prev-button {
                 background-color: #fafafa;
                 border: none;
                 padding: 1rem;
@@ -118,7 +123,7 @@ $gray-text: #989898;
                 box-shadow: 0px 0px 10px 0px #0000003a;
                 font-size: larger;
             }
-            .next-button {
+            .categories-next-button {
                 background-color: $orange;
                 border: none;
                 padding: 1rem;

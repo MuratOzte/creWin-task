@@ -18,7 +18,6 @@ nav {
     position: fixed;
     z-index: 1000;
     background-color: #fafafa;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     top: 0;
     margin-left: 0;
   }
@@ -270,7 +269,7 @@ nav .menu {
     margin-bottom: 1rem;
     margin-top: 5rem;
     height: auto;
-    padding: 1rem 5rem;
+    padding: 1rem 4rem;
   }
 }
 .search-section .category p {
@@ -388,12 +387,17 @@ nav .menu {
 .recently-added-section .recently-added-header .recently-added-text {
   font-size: 2.5rem;
 }
+@media screen and (max-width: 768px) {
+  .recently-added-section .recently-added-header .recently-added-text {
+    font-size: 2rem;
+  }
+}
 .recently-added-section .recently-added-buttons {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
-.recently-added-section .recently-added-buttons .prev-button {
+.recently-added-section .recently-added-buttons .recently-prev-button {
   background-color: #fafafa;
   border: none;
   padding: 1rem;
@@ -402,7 +406,7 @@ nav .menu {
   font-size: larger;
   cursor: pointer;
 }
-.recently-added-section .recently-added-buttons .next-button {
+.recently-added-section .recently-added-buttons .recently-next-button {
   background-color: #ff7b29;
   border: none;
   padding: 1rem;
@@ -477,6 +481,13 @@ nav .menu {
 }
 .top-categories h1 {
   font-size: 3rem;
+}
+@media screen and (max-width: 768px) {
+  .top-categories h1 {
+    font-size: 2rem;
+    overflow: visible;
+    width: max-content;
+  }
 }
 .top-categories .top-categories-cards {
   width: calc(100% - 4rem);
@@ -571,7 +582,7 @@ nav .menu {
   gap: 1rem;
   margin-right: 3rem;
 }
-.top-categories .top-categories-header .top-categories-buttons .prev-button {
+.top-categories .top-categories-header .top-categories-buttons .categories-prev-button {
   background-color: #fafafa;
   border: none;
   padding: 1rem;
@@ -579,7 +590,7 @@ nav .menu {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2274509804);
   font-size: larger;
 }
-.top-categories .top-categories-header .top-categories-buttons .next-button {
+.top-categories .top-categories-header .top-categories-buttons .categories-next-button {
   background-color: #ff7b29;
   border: none;
   padding: 1rem;

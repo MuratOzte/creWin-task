@@ -56,41 +56,4 @@ $(document).ready(function () {
     }
 });
 
-$('.menu').click(function () {
-    $('.line1, .line2, .line3').toggleClass('active');
-});
 
-$('.prev-button').click(function () {
-    $('.recent-items').animate(
-        {
-            scrollLeft: '-=360',
-        },
-        'slow'
-    );
-});
-$('.next-button').click(function () {
-    $('.recent-items').animate(
-        {
-            scrollLeft: '+=360',
-        },
-        'slow'
-    );
-});
-
-$(document).ready(function () {
-    var prevScrollpos = window.pageYOffset;
-
-    $(window).scroll(function () {
-        var currentScrollPos = window.pageYOffset;
-
-        if (prevScrollpos > currentScrollPos) {
-            // Yukarı scroll edildiğinde nav bar geri gelecek
-            $('nav').css('top', '0');
-        } else {
-            // Aşağı scroll edildiğinde nav bar kaybolacak
-            $('nav').css('top', '-100px'); // Top değerini değiştirebilirsiniz
-        }
-
-        prevScrollpos = currentScrollPos;
-    });
-});
