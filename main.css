@@ -2,7 +2,7 @@ nav {
   color: #fff;
   padding: 10px;
   display: flex;
-  width: 100%;
+  width: 90%;
   justify-content: space-between;
   align-items: center;
   transition: all 0.5s ease;
@@ -363,15 +363,12 @@ nav .menu {
   left: 0;
   right: 0;
   z-index: 99;
+  padding: 0.5rem 1rem;
+  width: 7rem;
 }
 
 .select-hide {
   display: none;
-}
-
-.select-items div:hover,
-.same-as-selected {
-  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .recently-added-section {
