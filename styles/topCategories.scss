@@ -25,6 +25,7 @@ $gray-text: #989898;
         background-color: #fafafa;
         color: #444;
         .card {
+            cursor: pointer;
             background: linear-gradient(to top, #4f4f4f, #fafafa);
             color: #fafafa;
             border-radius: 5px;

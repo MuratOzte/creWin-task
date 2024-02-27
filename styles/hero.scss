@@ -40,12 +40,14 @@ $gray-text: #989898;
             border: none;
             padding: 0rem 3rem;
             color: white;
+            cursor: pointer;
         }
         .video-button {
             display: flex;
             flex-direction: row;
             align-items: center;
             gap: 1rem;
+            cursor: pointer;
             img {
                 width: 1.2rem;
                 height: 1.2rem;

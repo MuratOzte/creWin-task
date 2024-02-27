@@ -1,10 +1,6 @@
 $gray-text: #989898;
 $white: #ffffff;
 $blue: #0cb6ff;
-@mixin margin-x($x) {
-    margin-left: $x;
-    margin-right: $x;
-}
 
 @mixin row-beetween-center {
     display: flex;
@@ -21,7 +17,6 @@ $blue: #0cb6ff;
     .recently-added-header {
         display: flex;
         flex-direction: row;
-        margin: 0.5rem 4rem 0rem 4rem;
         justify-content: space-between;
         .recently-added-text {
             font-size: 2.5rem;
@@ -39,6 +34,7 @@ $blue: #0cb6ff;
             border-radius: 50%;
             box-shadow: 0px 0px 10px 0px #0000003a;
             font-size: larger;
+            cursor: pointer;
         }
         .next-button {
             background-color: #ff7b29;
@@ -49,6 +45,7 @@ $blue: #0cb6ff;
             font-size: larger;
             color: white;
             transition: all 0.3s ease-in-out;
+            cursor: pointer;
         }
     }
 
@@ -58,7 +55,6 @@ $blue: #0cb6ff;
         justify-content: space-between;
         height: 90%;
         .recent-item {
-            margin: 0 4rem 0 4rem;
             background-color: $white;
             padding: 2rem 2rem 0 2rem;
             box-shadow: 0px 0px 10px 0px #0000001a;
@@ -85,6 +81,7 @@ $blue: #0cb6ff;
                     color: $blue;
                     border-color: $blue;
                     font-size: large;
+                    cursor: pointer;
                 }
             }
             .datas {

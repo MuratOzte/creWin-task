@@ -21,6 +21,7 @@ nav button {
   border: none;
   padding: 0.5rem 1.5rem;
   color: white;
+  cursor: pointer;
 }
 nav ul {
   display: flex;
@@ -76,12 +77,14 @@ nav ul li a.is-active {
   border: none;
   padding: 0rem 3rem;
   color: white;
+  cursor: pointer;
 }
 .hero-section .hero-footer .video-button {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 1rem;
+  cursor: pointer;
 }
 .hero-section .hero-footer .video-button img {
   width: 1.2rem;
@@ -253,7 +256,6 @@ nav ul li a.is-active {
 .recently-added-section .recently-added-header {
   display: flex;
   flex-direction: row;
-  margin: 0.5rem 4rem 0rem 4rem;
   justify-content: space-between;
 }
 .recently-added-section .recently-added-header .recently-added-text {
@@ -271,6 +273,7 @@ nav ul li a.is-active {
   border-radius: 50%;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2274509804);
   font-size: larger;
+  cursor: pointer;
 }
 .recently-added-section .recently-added-buttons .next-button {
   background-color: #ff7b29;
@@ -281,6 +284,7 @@ nav ul li a.is-active {
   font-size: larger;
   color: white;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 .recently-added-section .recent-items {
   display: flex;
@@ -289,7 +293,6 @@ nav ul li a.is-active {
   height: 90%;
 }
 .recently-added-section .recent-items .recent-item {
-  margin: 0 4rem 0 4rem;
   background-color: #ffffff;
   padding: 2rem 2rem 0 2rem;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1019607843);
@@ -320,6 +323,7 @@ nav ul li a.is-active {
   color: #0cb6ff;
   border-color: #0cb6ff;
   font-size: large;
+  cursor: pointer;
 }
 .recently-added-section .recent-items .recent-item .datas p {
   color: #989898;
@@ -350,6 +354,7 @@ nav ul li a.is-active {
   color: #444;
 }
 .top-categories .top-categories-cards .card {
+  cursor: pointer;
   background: linear-gradient(to top, #4f4f4f, #fafafa);
   color: #fafafa;
   border-radius: 5px;
@@ -548,6 +553,7 @@ nav ul li a.is-active {
   align-items: center;
   transform: translateX(-50px);
   box-shadow: 0px 0px 4px 0px #ff6b35;
+  cursor: pointer;
 }
 .subscribe .custom-input .send-button img {
   width: 20px;
@@ -581,6 +587,7 @@ footer ul {
 footer ul li {
   margin: 1rem 0;
   color: #949494;
+  cursor: pointer;
 }
 footer .get-in-touch p {
   margin: 2rem 0;
@@ -589,6 +596,7 @@ footer .get-in-touch p {
 footer .get-in-touch h4 {
   font-size: 24px;
   color: #00b2ff;
+  cursor: pointer;
 }
 
 body {

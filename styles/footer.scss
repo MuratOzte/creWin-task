@@ -18,17 +18,19 @@ footer {
         li {
             margin: 1rem 0;
             color: $gray-text;
+            cursor: pointer;
         }
     }
 
-    .get-in-touch{
-        p{
+    .get-in-touch {
+        p {
             margin: 2rem 0;
             color: $gray-text;
         }
-        h4{
+        h4 {
             font-size: 24px;
             color: #00b2ff;
+            cursor: pointer;
         }
     }
 }
