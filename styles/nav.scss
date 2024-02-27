@@ -11,7 +11,11 @@ nav {
     padding: 10px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     @include margin-x(3rem);
+    @media screen and (max-width: 768px) {
+        @include margin-x(1rem);
+    }
     a {
         color: $nav-prime-color;
         text-decoration: none;
@@ -47,6 +51,19 @@ nav {
                     border-bottom: 2px solid $nav-second-color;
                 }
             }
+        }
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+    .menu {
+        display: none;
+        display: flex;
+        @media screen and (max-width: 768px) {
+            color: white;
+            align-items: center;
+            font-size: 2rem;
+            cursor: pointer;
         }
     }
 }

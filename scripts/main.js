@@ -55,3 +55,8 @@ $(document).ready(function () {
         }
     }
 });
+
+$('.menu').click(function () {
+    $('.nav').toggleClass('nav-container');
+    console.log('evet');
+});

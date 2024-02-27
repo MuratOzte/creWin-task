@@ -3,8 +3,15 @@ nav {
   padding: 10px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-left: 3rem;
   margin-right: 3rem;
+}
+@media screen and (max-width: 768px) {
+  nav {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
 nav a {
   color: #212832;
@@ -40,6 +47,23 @@ nav ul li a {
 nav ul li a.is-active {
   color: black;
   border-bottom: 2px solid #ff8032;
+}
+@media screen and (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+}
+nav .menu {
+  display: none;
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  nav .menu {
+    color: white;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+  }
 }
 
 .hero-section {
