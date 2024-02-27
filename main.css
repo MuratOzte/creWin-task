@@ -573,29 +573,68 @@ nav ul li a.is-active {
 
 footer {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   margin-left: 10%;
   margin-right: 10%;
 }
 footer h1 {
+  font-size: 48px;
+  color: #212832;
+}
+footer h1 span {
+  color: #ff8032;
+}
+footer .active {
+  border: 2px solid #ff8032;
+}
+footer .links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer .links h1 {
   font-size: 24px;
 }
-footer ul {
+footer .links ul {
   list-style: none;
   padding: 0.2rem;
 }
-footer ul li {
+footer .links ul li {
   margin: 1rem 0;
   color: #949494;
   cursor: pointer;
 }
-footer .get-in-touch p {
+footer .links .get-in-touch p {
   margin: 2rem 0;
   color: #949494;
 }
-footer .get-in-touch h4 {
+footer .links .get-in-touch h4 {
   font-size: 24px;
   color: #00b2ff;
+  cursor: pointer;
+}
+footer .end-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+footer .end-section ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+footer .end-section ul li {
+  color: #949494;
+  cursor: pointer;
+}
+footer .end-section .social-media {
+  display: flex;
+  gap: 1.5rem;
+}
+footer .end-section .social-media img {
+  color: #949494;
   cursor: pointer;
 }
 

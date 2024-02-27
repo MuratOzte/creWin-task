@@ -1,4 +1,6 @@
 $gray-text: #949494;
+$nav-prime-color: #212832;
+$nav-second-color: #ff8032;
 
 @mixin margin-x($x) {
     margin-left: $x;
@@ -7,30 +9,73 @@ $gray-text: #949494;
 
 footer {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     @include margin-x(10%);
-    h1 {
-        font-size: 24px;
-    }
-    ul {
-        list-style: none;
-        padding: 0.2rem;
-        li {
-            margin: 1rem 0;
-            color: $gray-text;
-            cursor: pointer;
+
+    h1{
+        font-size: 48px;
+        color: $nav-prime-color;
+        span{
+            color: $nav-second-color;
         }
     }
 
-    .get-in-touch {
-        p {
-            margin: 2rem 0;
-            color: $gray-text;
-        }
-        h4 {
+    .active{
+        border: 2px solid $nav-second-color;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        h1 {
             font-size: 24px;
-            color: #00b2ff;
-            cursor: pointer;
+        }
+        ul {
+            list-style: none;
+            padding: 0.2rem;
+            li {
+                margin: 1rem 0;
+                color: $gray-text;
+                cursor: pointer;
+            }
+        }
+
+        .get-in-touch {
+            p {
+                margin: 2rem 0;
+                color: $gray-text;
+            }
+            h4 {
+                font-size: 24px;
+                color: #00b2ff;
+                cursor: pointer;
+            }
+        }
+    }
+    .end-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+            li {
+                color: $gray-text;
+                cursor: pointer;
+            }
+        }
+        .social-media {
+            display: flex;
+            gap: 1.5rem;
+            img{
+                color: $gray-text;
+                cursor: pointer;
+            }
         }
     }
 }
