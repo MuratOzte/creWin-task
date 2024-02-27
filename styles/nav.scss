@@ -58,12 +58,52 @@ nav {
     }
     .menu {
         display: none;
-        display: flex;
+        width: 40px;
+        height: 40px;
+        z-index: 1000;
         @media screen and (max-width: 768px) {
+            display: flex;
             color: white;
             align-items: center;
             font-size: 2rem;
+            position: relative;
             cursor: pointer;
+            .line1 {
+                position: absolute;
+                top: 10px;
+                width: 80%;
+                height: 11%;
+                background-color: black;
+                border-radius: 5px;
+                transition: all 0.5s ease;
+                &.active {
+                    transform: rotate(45deg) translate(7px, 7px);
+                }
+            }
+            .line2 {
+                position: absolute;
+                top: 18px;
+                width: 80%;
+                height: 11%;
+                background-color: black;
+                border-radius: 5px;
+                transition: all 0.5s ease;
+                &.active {
+                    opacity: 0;
+                }
+            }
+            .line3 {
+                position: absolute;
+                top: 26px;
+                width: 80%;
+                height: 11%;
+                background-color: black;
+                border-radius: 5px;
+                transition: all 0.5s ease;
+                &.active {
+                    transform: rotate(-45deg) translate(5px, -5px);
+                }
+            }
         }
     }
 }

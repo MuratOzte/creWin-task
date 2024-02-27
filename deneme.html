@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Toggle</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <style>
+        .toggle {
+            display: none; /* Başlangıçta öğeler gizli */
+        }
+    </style>
+</head>
+<body>
+
+<button class="menu">Toggle Items</button>
+<div class="item item1">Item 1</div>
+<div class="item item2">Item 2</div>
+<div class="item item3">Item 3</div>
+
+<script>
+    $(document).ready(function () {
+        $('.menu').click(function () {
+            $('.item1, .item2, .item3').toggle(); // Belirtilen öğelerin görünürlüğünü değiştir
+        });
+    });
+</script>
+
+</body>
+</html>

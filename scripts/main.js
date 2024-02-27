@@ -57,6 +57,5 @@ $(document).ready(function () {
 });
 
 $('.menu').click(function () {
-    $('.nav').toggleClass('nav-container');
-    console.log('evet');
+    $('.line1, .line2, .line3').toggleClass('active');
 });

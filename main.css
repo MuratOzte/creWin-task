@@ -55,14 +55,54 @@ nav ul li a.is-active {
 }
 nav .menu {
   display: none;
-  display: flex;
+  width: 40px;
+  height: 40px;
+  z-index: 1000;
 }
 @media screen and (max-width: 768px) {
   nav .menu {
+    display: flex;
     color: white;
     align-items: center;
     font-size: 2rem;
+    position: relative;
     cursor: pointer;
+  }
+  nav .menu .line1 {
+    position: absolute;
+    top: 10px;
+    width: 80%;
+    height: 11%;
+    background-color: black;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+  }
+  nav .menu .line1.active {
+    transform: rotate(45deg) translate(7px, 7px);
+  }
+  nav .menu .line2 {
+    position: absolute;
+    top: 18px;
+    width: 80%;
+    height: 11%;
+    background-color: black;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+  }
+  nav .menu .line2.active {
+    opacity: 0;
+  }
+  nav .menu .line3 {
+    position: absolute;
+    top: 26px;
+    width: 80%;
+    height: 11%;
+    background-color: black;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+  }
+  nav .menu .line3.active {
+    transform: rotate(-45deg) translate(5px, -5px);
   }
 }
 
