@@ -489,11 +489,17 @@ nav .menu {
 .top-categories .top-categories-cards {
   width: calc(100% - 4rem);
   display: grid;
-  grid-gap: 1.5rem 2.5rem;
+  grid-gap: 10% 5%;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto auto;
   background-color: #fafafa;
   color: #444;
+  height: fit-content;
+}
+@media screen and (max-width: 768px) {
+  .top-categories .top-categories-cards {
+    grid-gap: 8% 13%;
+  }
 }
 .top-categories .top-categories-cards .card {
   cursor: pointer;
@@ -586,6 +592,7 @@ nav .menu {
   border-radius: 50%;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2274509804);
   font-size: larger;
+  cursor: pointer;
 }
 .top-categories .top-categories-header .top-categories-buttons .categories-next-button {
   background-color: #ff7b29;
@@ -596,6 +603,7 @@ nav .menu {
   font-size: larger;
   color: white;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .feedback {

@@ -18,6 +18,22 @@ $('.recently-next-button').click(function () {
         'slow'
     );
 });
+$('.categories-prev-button').click(function () {
+    $('.top-categories-cards').animate(
+        {
+            scrollLeft: '-=360',
+        },
+        'slow'
+    );
+});
+$('.categories-next-button').click(function () {
+    $('.top-categories-cards').animate(
+        {
+            scrollLeft: '+=360',
+        },
+        'slow'
+    );
+});
 
 $(document).ready(function () {
     var prevScrollpos = window.scrollY;
