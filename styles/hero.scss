@@ -12,8 +12,17 @@ $gray-text: #989898;
     display: flex;
     justify-content: flex-start;
     gap: 8rem;
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
     .hero-section-texts {
         width: 40%;
+        @media screen and (max-width: 768px) {
+            width: 100%;
+            text-align: center;
+        }
 
         .primary-text {
             font-size: 3.5rem;
@@ -34,6 +43,9 @@ $gray-text: #989898;
         justify-content: flex-start;
         margin-top: 3rem;
         gap: 3rem;
+        @media screen and (max-width: 768px) {
+            justify-content: center;
+        }
         button {
             background-color: #ff8032;
             border-radius: 0.7rem;
@@ -63,12 +75,20 @@ $gray-text: #989898;
             }
         }
     }
-    img {
-        width: 26%;
-    }
+
     .header-info {
         display: flex;
         align-items: center;
+        @media screen and (max-width: 768px){
+            display: flex;
+            justify-content: center;
+        }
+        img {
+            width: 75%;
+            @media screen and (max-width: 768px) {
+                width: 50%;
+            }
+        }
         .infos {
             display: flex;
             flex-direction: column;

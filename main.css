@@ -2,6 +2,7 @@ nav {
   color: #fff;
   padding: 10px;
   display: flex;
+  width: 90%;
   justify-content: space-between;
   align-items: center;
   margin-left: 3rem;
@@ -114,8 +115,21 @@ nav .menu {
   justify-content: flex-start;
   gap: 8rem;
 }
+@media screen and (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+}
 .hero-section .hero-section-texts {
   width: 40%;
+}
+@media screen and (max-width: 768px) {
+  .hero-section .hero-section-texts {
+    width: 100%;
+    text-align: center;
+  }
 }
 .hero-section .hero-section-texts .primary-text {
   font-size: 3.5rem;
@@ -134,6 +148,11 @@ nav .menu {
   justify-content: flex-start;
   margin-top: 3rem;
   gap: 3rem;
+}
+@media screen and (max-width: 768px) {
+  .hero-section .hero-footer {
+    justify-content: center;
+  }
 }
 .hero-section .hero-footer button {
   background-color: #ff8032;
@@ -163,12 +182,23 @@ nav .menu {
   font-weight: 600;
   color: black;
 }
-.hero-section img {
-  width: 26%;
-}
 .hero-section .header-info {
   display: flex;
   align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .hero-section .header-info {
+    display: flex;
+    justify-content: center;
+  }
+}
+.hero-section .header-info img {
+  width: 75%;
+}
+@media screen and (max-width: 768px) {
+  .hero-section .header-info img {
+    width: 50%;
+  }
 }
 .hero-section .header-info .infos {
   display: flex;
