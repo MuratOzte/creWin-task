@@ -532,18 +532,22 @@ nav ul li a.is-active {
   padding: 20px;
   margin: 10px 0;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
+}
+.subscribe .custom-input input::placeholder {
+  color: #989898;
 }
 .subscribe .custom-input .send-button {
   background-color: #ff6b35;
   width: min-content;
   border-radius: 0.7rem;
-  width: 40px;
+  width: 50px;
   height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   transform: translateX(-50px);
+  box-shadow: 0px 0px 4px 0px #ff6b35;
 }
 .subscribe .custom-input .send-button img {
   width: 20px;
@@ -566,6 +570,25 @@ footer {
   justify-content: space-between;
   margin-left: 10%;
   margin-right: 10%;
+}
+footer h1 {
+  font-size: 24px;
+}
+footer ul {
+  list-style: none;
+  padding: 0.2rem;
+}
+footer ul li {
+  margin: 1rem 0;
+  color: #949494;
+}
+footer .get-in-touch p {
+  margin: 2rem 0;
+  color: #949494;
+}
+footer .get-in-touch h4 {
+  font-size: 24px;
+  color: #00b2ff;
 }
 
 body {
