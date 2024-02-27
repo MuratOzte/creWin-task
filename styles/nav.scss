@@ -14,8 +14,10 @@ nav {
     justify-content: space-between;
     align-items: center;
     @include margin-x(3rem);
-    @media screen and (max-width: 768px) {
+    @media (max-width: 768px) {
         @include margin-x(1rem);
+        justify-content: space-between;
+        width: 100%;
     }
     a {
         color: $nav-prime-color;
@@ -34,6 +36,9 @@ nav {
         padding: 0.5rem 1.5rem;
         color: white;
         cursor: pointer;
+        @media screen and (max-width: 768px){
+            margin-right: 2rem;
+        }
     }
 
     ul {
