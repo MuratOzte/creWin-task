@@ -10,14 +10,21 @@ nav {
     color: #fff;
     padding: 10px;
     display: flex;
-    width: 90%;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
+    transition: all 0.5s ease;
     @include margin-x(3rem);
     @media (max-width: 768px) {
         @include margin-x(1rem);
         justify-content: space-between;
         width: 100%;
+        position: fixed;
+        z-index: 1000;
+        background-color: #fafafa;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+        top: 0;
+        margin-left: 0;
     }
     a {
         color: $nav-prime-color;
@@ -36,8 +43,8 @@ nav {
         padding: 0.5rem 1.5rem;
         color: white;
         cursor: pointer;
-        @media screen and (max-width: 768px){
-            margin-right: 2rem;
+        @media screen and (max-width: 768px) {
+            margin-right: 0.5rem;
         }
     }
 
@@ -113,3 +120,11 @@ nav {
         }
     }
 }
+
+// .mobile-links {
+//     height: 100vh;
+//     width: 100%;
+//     background-color: black;
+//     z-index: 40;
+//     position: fixed;
+// }
