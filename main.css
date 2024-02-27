@@ -412,6 +412,13 @@ nav .menu {
   justify-content: space-between;
   height: 90%;
 }
+@media screen and (max-width: 768px) {
+  .recently-added-section .recent-items {
+    overflow-x: hidden;
+    gap: 2rem;
+    scrollbar-width: 0;
+  }
+}
 .recently-added-section .recent-items .recent-item {
   background-color: #ffffff;
   padding: 2rem 2rem 0 2rem;

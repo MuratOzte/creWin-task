@@ -59,3 +59,20 @@ $(document).ready(function () {
 $('.menu').click(function () {
     $('.line1, .line2, .line3').toggleClass('active');
 });
+
+$('.prev-button').click(function () {
+    $('.recent-items').animate(
+        {
+            scrollLeft: '-=360',
+        },
+        'slow'
+    );
+});
+$('.next-button').click(function () {
+    $('.recent-items').animate(
+        {
+            scrollLeft: '+=360',
+        },
+        'slow'
+    );
+});

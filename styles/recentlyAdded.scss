@@ -54,6 +54,12 @@ $blue: #0cb6ff;
         flex-direction: row;
         justify-content: space-between;
         height: 90%;
+        @media screen and (max-width: 768px) {
+            overflow-x: hidden;
+            gap: 2rem;
+            scrollbar-width: 0;
+        }
+
         .recent-item {
             background-color: $white;
             padding: 2rem 2rem 0 2rem;
