@@ -1,0 +1,10 @@
+@mixin margin-x($x) {
+    margin-left: $x;
+    margin-right: $x;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    @include margin-x(10%);
+}

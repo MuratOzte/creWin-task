@@ -500,6 +500,74 @@ nav ul li a.is-active {
   width: 100%;
 }
 
+.subscribe {
+  background-color: #132742;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  margin-bottom: 3rem;
+}
+.subscribe .text-section {
+  color: white;
+  margin-left: 3rem;
+}
+.subscribe .text-section h1 {
+  font-size: 36px;
+}
+.subscribe .text-section p {
+  font-size: 18px;
+  width: 70%;
+}
+.subscribe .custom-input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.subscribe .custom-input input {
+  width: 100%;
+  padding: 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+}
+.subscribe .custom-input .send-button {
+  background-color: #ff6b35;
+  width: min-content;
+  border-radius: 0.7rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-50px);
+}
+.subscribe .custom-input .send-button img {
+  width: 20px;
+  height: 20px;
+}
+.subscribe .image-section {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.subscribe .image-section img {
+  width: 25%;
+  position: absolute;
+  right: 10%;
+  top: -250px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 body {
   margin: 0;
   padding: 0;
