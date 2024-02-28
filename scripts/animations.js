@@ -18,10 +18,12 @@ $('.recently-next-button').click(function () {
         'slow'
     );
 });
+
+const width = $('.top-categories-cards').width();
 $('.categories-prev-button').click(function () {
     $('.top-categories-cards').animate(
         {
-            scrollLeft: '-=800',
+            scrollLeft: '-=' + width / 1.2,
         },
         'slow'
     );
@@ -29,7 +31,7 @@ $('.categories-prev-button').click(function () {
 $('.categories-next-button').click(function () {
     $('.top-categories-cards').animate(
         {
-            scrollLeft: '+=800',
+            scrollLeft: '+=' + width / 1.2,
         },
         'slow'
     );

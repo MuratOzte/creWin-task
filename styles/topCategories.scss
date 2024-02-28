@@ -18,6 +18,7 @@ $gray-text: #989898;
             font-size: 2rem;
             overflow: visible;
             width: max-content;
+            margin: 0;
         }
     }
 
@@ -34,6 +35,8 @@ $gray-text: #989898;
 
         @media screen and (max-width: 768px) {
             overflow-x: hidden;
+            overflow-y: hidden;
+
             width: calc(100% - 2rem);
             grid-gap: 8% 11%;
         }
@@ -117,6 +120,13 @@ $gray-text: #989898;
     .top-categories-header {
         display: flex;
         justify-content: space-between;
+        @media screen and (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
         .top-categories-texts {
             p {
                 color: $gray-text;
