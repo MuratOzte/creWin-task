@@ -30,9 +30,12 @@ $gray-text: #989898;
         background-color: #fafafa;
         color: #444;
         height: fit-content;
+        height: 80vh;
 
         @media screen and (max-width: 768px) {
-            grid-gap: 8% 13%;
+            overflow-x: hidden;
+            width: calc(100% - 2rem);
+            grid-gap: 8% 11%;
         }
         .card {
             cursor: pointer;
@@ -88,6 +91,7 @@ $gray-text: #989898;
             bottom: 25px;
             left: 10px;
             font-weight: bold;
+            z-index: 100;
         }
         .category-dealer {
             position: absolute;
@@ -102,6 +106,9 @@ $gray-text: #989898;
             right: 40px;
             height: 80%;
             filter: contrast(0.7) brightness(1.2);
+            @media screen and (max-width: 768px) {
+                right: 5%;
+            }
         }
         .statue {
             height: 90%;

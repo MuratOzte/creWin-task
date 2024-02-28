@@ -495,10 +495,13 @@ nav .menu {
   background-color: #fafafa;
   color: #444;
   height: fit-content;
+  height: 80vh;
 }
 @media screen and (max-width: 768px) {
   .top-categories .top-categories-cards {
-    grid-gap: 8% 13%;
+    overflow-x: hidden;
+    width: calc(100% - 2rem);
+    grid-gap: 8% 11%;
   }
 }
 .top-categories .top-categories-cards .card {
@@ -554,6 +557,7 @@ nav .menu {
   bottom: 25px;
   left: 10px;
   font-weight: bold;
+  z-index: 100;
 }
 .top-categories .top-categories-cards .category-dealer {
   position: absolute;
@@ -568,6 +572,11 @@ nav .menu {
   right: 40px;
   height: 80%;
   filter: contrast(0.7) brightness(1.2);
+}
+@media screen and (max-width: 768px) {
+  .top-categories .top-categories-cards img {
+    right: 5%;
+  }
 }
 .top-categories .top-categories-cards .statue {
   height: 90%;

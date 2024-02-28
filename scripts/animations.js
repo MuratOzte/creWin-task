@@ -21,7 +21,7 @@ $('.recently-next-button').click(function () {
 $('.categories-prev-button').click(function () {
     $('.top-categories-cards').animate(
         {
-            scrollLeft: '-=360',
+            scrollLeft: '-=800',
         },
         'slow'
     );
@@ -29,7 +29,7 @@ $('.categories-prev-button').click(function () {
 $('.categories-next-button').click(function () {
     $('.top-categories-cards').animate(
         {
-            scrollLeft: '+=360',
+            scrollLeft: '+=800',
         },
         'slow'
     );
