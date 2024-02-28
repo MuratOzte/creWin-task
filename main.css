@@ -622,8 +622,20 @@ nav .menu {
   gap: 5rem;
   margin: 8rem;
 }
+@media screen and (max-width: 768px) {
+  .feedback {
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 2rem;
+  }
+}
 .feedback .text-container {
   width: 40%;
+}
+@media screen and (max-width: 768px) {
+  .feedback .text-container {
+    width: 100%;
+  }
 }
 .feedback .text-container h1 {
   font-size: 2.5rem;
