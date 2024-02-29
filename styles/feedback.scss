@@ -12,9 +12,15 @@ $gray-text: #989898;
         margin: 2rem 4rem 2rem 4rem;
         text-align: center;
     }
+    img {
+        @media screen and (max-width: 768px) {
+            margin: auto;
+            max-width: 16rem;
+        }
+    }
     .text-container {
         width: 40%;
-        @media screen and (max-width: 768px){
+        @media screen and (max-width: 768px) {
             width: 100%;
         }
         h1 {
