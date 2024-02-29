@@ -428,7 +428,7 @@ nav .menu {
 }
 @media screen and (max-width: 768px) {
   .recently-added-section .recent-items {
-    overflow-x: hidden;
+    overflow-x: scroll;
     gap: 2rem;
     scrollbar-width: 0;
   }
@@ -510,6 +510,8 @@ nav .menu {
     overflow-y: hidden;
     width: calc(100% - 2rem);
     grid-gap: 8% 11%;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
   }
 }
 .top-categories .top-categories-cards .card {
@@ -525,6 +527,12 @@ nav .menu {
 .top-categories .top-categories-cards .a {
   grid-column: 1;
   grid-row: 1;
+}
+@media screen and (max-width: 768px) {
+  .top-categories .top-categories-cards .a {
+    grid-column: 1;
+    grid-row: 1;
+  }
 }
 .top-categories .top-categories-cards .b {
   grid-column: 4;

@@ -7,7 +7,7 @@ const recentwidth = $('.recent-items').width();
 $('.recently-prev-button').click(function () {
     $('.recent-items').animate(
         {
-            scrollLeft: '-=' + recentwidth + 32,
+            scrollLeft: '-=' + recentwidth * 1.08,
         },
         'slow'
     );
@@ -15,7 +15,7 @@ $('.recently-prev-button').click(function () {
 $('.recently-next-button').click(function () {
     $('.recent-items').animate(
         {
-            scrollLeft: '+=' + recentwidth + 32,
+            scrollLeft: '+=' + recentwidth * 1.08,
         },
         'slow'
     );
