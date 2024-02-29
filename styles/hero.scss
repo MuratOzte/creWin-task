@@ -26,16 +26,25 @@ $gray-text: #989898;
 
         .primary-text {
             font-size: 3.5rem;
+            @media screen and (max-width: 768px) {
+                font-size: 2.5rem;
+            }
         }
         .secondary-text {
             font-size: 3.5rem;
             color: $blue-color;
+            @media screen and (max-width: 768px) {
+                font-size: 2.5rem;
+            }
         }
 
         .gray-text {
             font-size: 1.4rem;
             color: $gray-text;
             line-height: 2rem;
+            @media screen  and (max-width: 768px){
+                font-size: 1rem;
+            }
         }
     }
     .hero-footer {
@@ -79,7 +88,7 @@ $gray-text: #989898;
     .header-info {
         display: flex;
         align-items: center;
-        @media screen and (max-width: 768px){
+        @media screen and (max-width: 768px) {
             display: flex;
             justify-content: center;
         }

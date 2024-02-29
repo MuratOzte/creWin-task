@@ -126,6 +126,39 @@ nav .menu {
   }
 }
 
+.mobile-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #fafafa;
+  z-index: 40;
+  position: fixed;
+  right: -100%;
+}
+.mobile-links ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  list-style: none;
+}
+.mobile-links ul li {
+  margin-top: 2rem;
+}
+.mobile-links ul li a {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #212832;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+.mobile-links ul li a:hover {
+  color: #ff8032;
+}
+
 .hero-section {
   margin-top: 2rem;
   margin-left: 5%;
@@ -153,14 +186,29 @@ nav .menu {
 .hero-section .hero-section-texts .primary-text {
   font-size: 3.5rem;
 }
+@media screen and (max-width: 768px) {
+  .hero-section .hero-section-texts .primary-text {
+    font-size: 2.5rem;
+  }
+}
 .hero-section .hero-section-texts .secondary-text {
   font-size: 3.5rem;
   color: #263fa3;
+}
+@media screen and (max-width: 768px) {
+  .hero-section .hero-section-texts .secondary-text {
+    font-size: 2.5rem;
+  }
 }
 .hero-section .hero-section-texts .gray-text {
   font-size: 1.4rem;
   color: #989898;
   line-height: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .hero-section .hero-section-texts .gray-text {
+    font-size: 1rem;
+  }
 }
 .hero-section .hero-footer {
   display: flex;
@@ -272,8 +320,8 @@ nav .menu {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
-    margin-bottom: 1rem;
-    margin-top: 5rem;
+    padding: 1rem 1.5rem;
+    margin: 5rem 1rem 1rem 1rem;
     height: auto;
   }
 }
@@ -886,6 +934,12 @@ footer {
   margin-left: 10%;
   margin-right: 10%;
 }
+@media screen and (max-width: 768px) {
+  footer {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
 footer h1 {
   font-size: 48px;
   color: #212832;
@@ -952,7 +1006,7 @@ footer .links .get-in-touch h4 {
 }
 @media screen and (max-width: 768px) {
   footer .links .get-in-touch h4 {
-    font-size: 10px;
+    font-size: 9px;
   }
 }
 footer .end-section {
@@ -965,6 +1019,11 @@ footer .end-section ul {
   list-style: none;
   display: flex;
   gap: 1rem;
+}
+@media screen and (max-width: 768px) {
+  footer .end-section ul {
+    display: none;
+  }
 }
 footer .end-section ul li {
   color: #949494;

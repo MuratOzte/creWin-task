@@ -33,7 +33,7 @@ nav {
         span {
             color: $nav-second-color;
         }
-        @media screen and (max-width:768px) {
+        @media screen and (max-width: 768px) {
             font-size: 1.5rem;
         }
     }
@@ -124,10 +124,35 @@ nav {
     }
 }
 
-// .mobile-links {
-//     height: 100vh;
-//     width: 100%;
-//     background-color: black;
-//     z-index: 40;
-//     position: fixed;
-// }
+.mobile-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #fafafa;
+    z-index: 40;
+    position: fixed;
+    right: -100%;
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        list-style: none;
+        li {
+            margin-top: 2rem;
+            a {
+                font-size: 2rem;
+                font-weight: bold;
+                color: $nav-prime-color;
+                text-decoration: none;
+                transition: all 0.5s ease;
+                &:hover {
+                    color: $nav-second-color;
+                }
+            }
+        }
+    }
+}

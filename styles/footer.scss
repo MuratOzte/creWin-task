@@ -12,6 +12,9 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     @include margin-x(10%);
+    @media screen and (max-width: 768px) {
+        @include margin-x(5%);
+    }
 
     h1 {
         font-size: 48px;
@@ -72,7 +75,7 @@ footer {
                 color: #00b2ff;
                 cursor: pointer;
                 @media screen and (max-width: 768px) {
-                    font-size: 10px;
+                    font-size: 9px;
                 }
             }
         }
@@ -87,6 +90,9 @@ footer {
             list-style: none;
             display: flex;
             gap: 1rem;
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
             li {
                 color: $gray-text;
                 cursor: pointer;

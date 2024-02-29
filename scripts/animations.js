@@ -60,3 +60,15 @@ $(document).ready(function () {
         prevScrollpos = currentScrollPos;
     });
 });
+
+$('.menu').click(function () {
+    var mobileLinks = $('.mobile-links'); // .mobile-links sınıfına sahip öğeyi seçin
+
+    if (mobileLinks.css('right') === '0px') {
+        mobileLinks.animate({ right: '-100%' }, 'slow', function () {
+            // Menü gizlendikten sonra yapılacak işlemler
+        });
+    } else {
+        mobileLinks.animate({ right: '0px' }, 'slow');
+    }
+});
