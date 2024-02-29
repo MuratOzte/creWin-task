@@ -5,6 +5,9 @@ $gray-text: #989898;
     display: flex;
     align-items: center;
     flex-direction: column;
+    align-items: stretch;
+    margin-left: 5%;
+    margin-right: 5%;
     h1 {
         font-size: 3rem;
         @media screen and (max-width: 768px) {
@@ -12,6 +15,8 @@ $gray-text: #989898;
             overflow: visible;
             width: max-content;
             margin: 0;
+            margin-left: 5%;
+            margin-right: 5%;
         }
     }
 
@@ -135,7 +140,7 @@ $gray-text: #989898;
         }
         .statue {
             height: 90%;
-            @media screen  and (max-width: 768px){
+            @media screen and (max-width: 768px) {
                 height: 80%;
             }
         }
@@ -150,11 +155,15 @@ $gray-text: #989898;
             align-items: center;
             margin-bottom: 2rem;
             width: 80%;
-            transform:translateX(-5%);
+            transform: translateX(-5%);
         }
         .top-categories-texts {
             p {
                 color: $gray-text;
+                @media screen and (max-width: 768px) {
+                    margin-right: 5%;
+                    margin-left: 5%;
+                }
             }
         }
         .top-categories-buttons {

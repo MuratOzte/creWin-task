@@ -44,6 +44,9 @@ nav button {
   color: white;
   cursor: pointer;
 }
+nav button:hover {
+  background-color: #ff7019;
+}
 @media screen and (max-width: 768px) {
   nav button {
     margin-right: 1rem;
@@ -229,6 +232,9 @@ nav .menu {
   color: white;
   cursor: pointer;
 }
+.hero-section .hero-footer button:hover {
+  background-color: #ff7019;
+}
 .hero-section .hero-footer .video-button {
   display: flex;
   flex-direction: row;
@@ -355,6 +361,9 @@ nav .menu {
   border: none;
   background-color: transparent;
   color: #ffffff;
+}
+.search-section .button:hover {
+  background-color: #0d1b2e;
 }
 @media screen and (max-width: 768px) {
   .search-section .button {
@@ -512,6 +521,11 @@ nav .menu {
   border-color: #0cb6ff;
   font-size: large;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.recently-added-section .recent-items .recent-item .price-action button:hover {
+  background-color: #0cb6ff;
+  color: #ffffff;
 }
 .recently-added-section .recent-items .recent-item .datas p {
   color: #989898;
@@ -530,6 +544,9 @@ nav .menu {
   display: flex;
   align-items: center;
   flex-direction: column;
+  align-items: stretch;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 .top-categories h1 {
   font-size: 3rem;
@@ -540,6 +557,8 @@ nav .menu {
     overflow: visible;
     width: max-content;
     margin: 0;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }
 .top-categories .top-categories-cards {
@@ -701,6 +720,12 @@ nav .menu {
 .top-categories .top-categories-header .top-categories-texts p {
   color: #989898;
 }
+@media screen and (max-width: 768px) {
+  .top-categories .top-categories-header .top-categories-texts p {
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+}
 .top-categories .top-categories-header .top-categories-buttons {
   display: flex;
   align-items: center;
@@ -778,6 +803,7 @@ nav .menu {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   gap: 2rem;
   margin-top: 2rem;
 }
@@ -888,7 +914,7 @@ nav .menu {
 }
 @media screen and (max-width: 768px) {
   .subscribe .custom-input .send-button {
-    transform: translateX(-40px);
+    transform: translateX(-45px);
   }
 }
 .subscribe .image-section {
