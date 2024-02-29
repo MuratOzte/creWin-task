@@ -1,17 +1,10 @@
 $orange: #ff7b29;
 $gray-text: #989898;
 
-@mixin cardProps {
-    background-color: #444;
-    color: #fff;
-    border-radius: 5px;
-    padding: 20px;
-    font-size: 150%;
-    height: 10rem;
-}
-
 .top-categories {
-    margin: 2rem 0 2rem 3rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     h1 {
         font-size: 3rem;
         @media screen and (max-width: 768px) {
@@ -38,7 +31,7 @@ $gray-text: #989898;
             overflow-y: hidden;
             width: calc(100% - 2rem);
             grid-gap: 2% 11%;
-            grid-template-columns: auto auto auto;
+            grid-template-columns: auto auto;
             grid-template-rows: auto auto auto auto auto;
             height: 180vh;
         }
@@ -51,6 +44,10 @@ $gray-text: #989898;
             font-size: 150%;
             position: relative;
             border-radius: 2rem;
+            @media screen and (max-width: 768px) {
+                padding: 5rem;
+                font-size: 100%;
+            }
         }
 
         .a {
@@ -133,10 +130,14 @@ $gray-text: #989898;
             filter: contrast(0.7) brightness(1.2);
             @media screen and (max-width: 768px) {
                 right: 5%;
+                height: 65%;
             }
         }
         .statue {
             height: 90%;
+            @media screen  and (max-width: 768px){
+                height: 80%;
+            }
         }
     }
     .top-categories-header {
@@ -148,6 +149,8 @@ $gray-text: #989898;
             justify-content: center;
             align-items: center;
             margin-bottom: 2rem;
+            width: 80%;
+            transform:translateX(-5%);
         }
         .top-categories-texts {
             p {
@@ -159,7 +162,7 @@ $gray-text: #989898;
             align-items: center;
             gap: 1rem;
             margin-right: 3rem;
-            @media screen and (max-width: 768px){
+            @media screen and (max-width: 768px) {
                 display: none;
             }
             .categories-prev-button {

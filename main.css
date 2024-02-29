@@ -480,7 +480,9 @@ nav .menu {
 }
 
 .top-categories {
-  margin: 2rem 0 2rem 3rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .top-categories h1 {
   font-size: 3rem;
@@ -510,7 +512,7 @@ nav .menu {
     overflow-y: hidden;
     width: calc(100% - 2rem);
     grid-gap: 2% 11%;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
     grid-template-rows: auto auto auto auto auto;
     height: 180vh;
   }
@@ -524,6 +526,12 @@ nav .menu {
   font-size: 150%;
   position: relative;
   border-radius: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .top-categories .top-categories-cards .card {
+    padding: 5rem;
+    font-size: 100%;
+  }
 }
 .top-categories .top-categories-cards .a {
   grid-column: 1;
@@ -617,10 +625,16 @@ nav .menu {
 @media screen and (max-width: 768px) {
   .top-categories .top-categories-cards img {
     right: 5%;
+    height: 65%;
   }
 }
 .top-categories .top-categories-cards .statue {
   height: 90%;
+}
+@media screen and (max-width: 768px) {
+  .top-categories .top-categories-cards .statue {
+    height: 80%;
+  }
 }
 .top-categories .top-categories-header {
   display: flex;
@@ -633,6 +647,8 @@ nav .menu {
     justify-content: center;
     align-items: center;
     margin-bottom: 2rem;
+    width: 80%;
+    transform: translateX(-5%);
   }
 }
 .top-categories .top-categories-header .top-categories-texts p {
