@@ -16,24 +16,25 @@ $gray-text: #989898;
     padding: 2rem;
     border-radius: 1.5rem;
     margin-bottom: 3rem;
-    @media screen and (max-width: 768px){
-        padding: 2rem 1.5rem 2rem 1.5rem;
+    @media screen and (max-width: 768px) {
+        padding: 2rem 1rem 2rem 1rem;
     }
-
 
     .text-section {
         color: white;
         margin-left: 3rem;
         z-index: 100;
-        @media screen and (max-width: 768px){
-            margin-left: 0.5rem;
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+            margin-left: 1rem;
         }
         h1 {
             font-size: 36px;
             @media screen and (max-width: 768px) {
                 overflow-x: visible;
-                width: 150%;
-                font-size: 24px;
+                width: 100%;
+                font-size: 18px;
             }
         }
         p {
@@ -41,19 +42,17 @@ $gray-text: #989898;
             width: 70%;
             @media screen and (max-width: 768px) {
                 overflow-x: visible;
-                width: 150%;
                 font-size: 12px;
-
+                width: 100%;
             }
-
         }
     }
     .custom-input {
         display: flex;
         flex-direction: row;
         align-items: center;
-        @media screen and (max-width: 768px){
-            width: 150%;
+        @media screen and (max-width:768px) {
+            width: 110%;
         }
         input {
             width: 100%;
@@ -81,36 +80,36 @@ $gray-text: #989898;
                 width: 20px;
                 height: 20px;
             }
+            @media screen and (max-width: 768px) {
+            transform: translateX(-40px);
+
+            }
         }
     }
     .image-section {
         position: relative;
         width: 100%;
         height: auto;
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
         img {
             width: 25%;
             position: absolute;
             right: 10%;
             top: -250px;
-            @media screen and (max-width: 1200px){
+            @media screen and (max-width: 1200px) {
                 width: 35%;
                 right: 5%;
                 top: -70%;
             }
-            @media screen and (max-width: 1000px){
+            @media screen and (max-width: 1000px) {
                 width: 40%;
                 right: 5%;
                 top: -60%;
             }
-            @media screen and (max-width: 800px){
-                width: 50%;
-                right: 5%;
-                top: -60%;
-            }
-            @media screen and (max-width: 600px){
-                width: 60%;
-                right: -15%;
-                top: -40%;
+            @media screen and (max-width: 800px) {
+                display: none;
             }
         }
     }

@@ -509,9 +509,10 @@ nav .menu {
     overflow-x: hidden;
     overflow-y: hidden;
     width: calc(100% - 2rem);
-    grid-gap: 8% 11%;
+    grid-gap: 2% 11%;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto auto auto;
+    height: 180vh;
   }
 }
 .top-categories .top-categories-cards .card {
@@ -538,6 +539,12 @@ nav .menu {
   grid-column: 4;
   grid-row: 2;
 }
+@media screen and (max-width: 768px) {
+  .top-categories .top-categories-cards .b {
+    grid-column: 1;
+    grid-row: 4;
+  }
+}
 .top-categories .top-categories-cards .c {
   grid-column: 1;
   grid-row: 2;
@@ -546,13 +553,31 @@ nav .menu {
   grid-column: 2/4;
   grid-row: 1/3;
 }
+@media screen and (max-width: 768px) {
+  .top-categories .top-categories-cards .d {
+    grid-column: 2;
+    grid-row: 1/3;
+  }
+}
 .top-categories .top-categories-cards .e {
   grid-column: 4/6;
   grid-row: 1;
 }
+@media screen and (max-width: 768px) {
+  .top-categories .top-categories-cards .e {
+    grid-column: 1/3;
+    grid-row: 3;
+  }
+}
 .top-categories .top-categories-cards .f {
   grid-column: 5;
   grid-row: 2;
+}
+@media screen and (max-width: 768px) {
+  .top-categories .top-categories-cards .f {
+    grid-column: 2;
+    grid-row: 4;
+  }
 }
 .top-categories .top-categories-cards .badge {
   position: absolute;
@@ -619,6 +644,11 @@ nav .menu {
   gap: 1rem;
   margin-right: 3rem;
 }
+@media screen and (max-width: 768px) {
+  .top-categories .top-categories-header .top-categories-buttons {
+    display: none;
+  }
+}
 .top-categories .top-categories-header .top-categories-buttons .categories-prev-button {
   background-color: #fafafa;
   border: none;
@@ -651,7 +681,8 @@ nav .menu {
   .feedback {
     flex-direction: column;
     gap: 3rem;
-    margin-top: 2rem;
+    margin: 2rem 4rem 2rem 4rem;
+    text-align: center;
   }
 }
 .feedback .text-container {
@@ -714,7 +745,7 @@ nav .menu {
 }
 @media screen and (max-width: 768px) {
   .subscribe {
-    padding: 2rem 1.5rem 2rem 1.5rem;
+    padding: 2rem 1rem 2rem 1rem;
   }
 }
 .subscribe .text-section {
@@ -724,7 +755,8 @@ nav .menu {
 }
 @media screen and (max-width: 768px) {
   .subscribe .text-section {
-    margin-left: 0.5rem;
+    width: 100%;
+    margin-left: 1rem;
   }
 }
 .subscribe .text-section h1 {
@@ -733,8 +765,8 @@ nav .menu {
 @media screen and (max-width: 768px) {
   .subscribe .text-section h1 {
     overflow-x: visible;
-    width: 150%;
-    font-size: 24px;
+    width: 100%;
+    font-size: 18px;
   }
 }
 .subscribe .text-section p {
@@ -744,8 +776,8 @@ nav .menu {
 @media screen and (max-width: 768px) {
   .subscribe .text-section p {
     overflow-x: visible;
-    width: 150%;
     font-size: 12px;
+    width: 100%;
   }
 }
 .subscribe .custom-input {
@@ -755,7 +787,7 @@ nav .menu {
 }
 @media screen and (max-width: 768px) {
   .subscribe .custom-input {
-    width: 150%;
+    width: 110%;
   }
 }
 .subscribe .custom-input input {
@@ -785,10 +817,20 @@ nav .menu {
   width: 20px;
   height: 20px;
 }
+@media screen and (max-width: 768px) {
+  .subscribe .custom-input .send-button {
+    transform: translateX(-40px);
+  }
+}
 .subscribe .image-section {
   position: relative;
   width: 100%;
   height: auto;
+}
+@media screen and (max-width: 768px) {
+  .subscribe .image-section {
+    display: none;
+  }
 }
 .subscribe .image-section img {
   width: 25%;
@@ -812,16 +854,7 @@ nav .menu {
 }
 @media screen and (max-width: 800px) {
   .subscribe .image-section img {
-    width: 50%;
-    right: 5%;
-    top: -60%;
-  }
-}
-@media screen and (max-width: 600px) {
-  .subscribe .image-section img {
-    width: 60%;
-    right: -15%;
-    top: -40%;
+    display: none;
   }
 }
 
