@@ -41,7 +41,7 @@ $('.categories-next-button').click(function () {
 
 $(document).ready(function () {
     var prevScrollpos = window.scrollY;
-    var scrollThreshold = 10; // Eşik değeri
+    var scrollThreshold = 10; 
 
     $(window).scroll(function () {
         var currentScrollPos = window.scrollY;
@@ -62,11 +62,10 @@ $(document).ready(function () {
 });
 
 $('.menu').click(function () {
-    var mobileLinks = $('.mobile-links'); // .mobile-links sınıfına sahip öğeyi seçin
+    var mobileLinks = $('.mobile-links'); 
 
     if (mobileLinks.css('right') === '0px') {
         mobileLinks.animate({ right: '-100%' }, 'slow', function () {
-            // Menü gizlendikten sonra yapılacak işlemler
         });
     } else {
         mobileLinks.animate({ right: '0px' }, 'slow');
