@@ -39,7 +39,7 @@ footer {
             font-size: 24px;
             @media screen and (max-width: 768px) {
                 font-size: 12px;
-                text-align: center;
+                text-align: left;
             }
         }
         ul {
@@ -47,7 +47,7 @@ footer {
             padding: 0.2rem;
             @media screen and (max-width: 768px) {
                 font-size: 10px;
-                text-align: center;
+                text-align: left;
             }
             li {
                 margin: 1rem 0;

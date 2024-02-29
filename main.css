@@ -184,6 +184,7 @@ nav .menu {
   .hero-section .hero-section-texts {
     width: 100%;
     text-align: center;
+    margin-top: 3rem;
   }
 }
 .hero-section .hero-section-texts .primary-text {
@@ -241,14 +242,6 @@ nav .menu {
   align-items: center;
   gap: 1rem;
   cursor: pointer;
-}
-.hero-section .hero-footer .video-button img {
-  width: 1.2rem;
-  height: 1.2rem;
-  border: 2px solid gray;
-  padding: 12px;
-  border-radius: 45%;
-  background-color: #ff8032;
 }
 .hero-section .hero-footer .video-button .watch-video-text {
   font-size: 1.2rem;
@@ -803,9 +796,13 @@ nav .menu {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
   gap: 2rem;
   margin-top: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .feedback .avatar {
+    justify-content: center;
+  }
 }
 .feedback .avatar .img-container img {
   width: 60px;
@@ -992,7 +989,7 @@ footer .links h1 {
 @media screen and (max-width: 768px) {
   footer .links h1 {
     font-size: 12px;
-    text-align: center;
+    text-align: left;
   }
 }
 footer .links ul {
@@ -1002,7 +999,7 @@ footer .links ul {
 @media screen and (max-width: 768px) {
   footer .links ul {
     font-size: 10px;
-    text-align: center;
+    text-align: left;
   }
 }
 footer .links ul li {

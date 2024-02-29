@@ -22,6 +22,7 @@ $gray-text: #989898;
         @media screen and (max-width: 768px) {
             width: 100%;
             text-align: center;
+            margin-top: 3rem;
         }
 
         .primary-text {
@@ -72,14 +73,6 @@ $gray-text: #989898;
             align-items: center;
             gap: 1rem;
             cursor: pointer;
-            img {
-                width: 1.2rem;
-                height: 1.2rem;
-                border: 2px solid gray;
-                padding: 12px;
-                border-radius: 45%;
-                background-color: #ff8032;
-            }
             .watch-video-text {
                 font-size: 1.2rem;
                 font-weight: 600;
