@@ -33,6 +33,9 @@ nav {
         span {
             color: $nav-second-color;
         }
+        @media screen and (max-width:768px) {
+            font-size: 1.5rem;
+        }
     }
 
     button {
@@ -43,7 +46,8 @@ nav {
         color: white;
         cursor: pointer;
         @media screen and (max-width: 768px) {
-            margin-right: 0.5rem;
+            margin-right: 1rem;
+            padding: 0.5rem 1rem;
         }
     }
 

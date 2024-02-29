@@ -31,6 +31,11 @@ nav a {
 nav a span {
   color: #ff8032;
 }
+@media screen and (max-width: 768px) {
+  nav a {
+    font-size: 1.5rem;
+  }
+}
 nav button {
   background-color: #ff8032;
   border-radius: 0.7rem;
@@ -41,7 +46,8 @@ nav button {
 }
 @media screen and (max-width: 768px) {
   nav button {
-    margin-right: 0.5rem;
+    margin-right: 1rem;
+    padding: 0.5rem 1rem;
   }
 }
 nav ul {

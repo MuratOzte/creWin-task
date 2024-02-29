@@ -2,10 +2,12 @@ $('.menu').click(function () {
     $('.line1, .line2, .line3').toggleClass('active');
 });
 
+const recentwidth = $('.recent-items').width();
+
 $('.recently-prev-button').click(function () {
     $('.recent-items').animate(
         {
-            scrollLeft: '-=360',
+            scrollLeft: '-=' + recentwidth + 32,
         },
         'slow'
     );
@@ -13,7 +15,7 @@ $('.recently-prev-button').click(function () {
 $('.recently-next-button').click(function () {
     $('.recent-items').animate(
         {
-            scrollLeft: '+=360',
+            scrollLeft: '+=' + recentwidth + 32,
         },
         'slow'
     );
