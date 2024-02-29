@@ -13,15 +13,18 @@ footer {
     justify-content: space-between;
     @include margin-x(10%);
 
-    h1{
+    h1 {
         font-size: 48px;
         color: $nav-prime-color;
-        span{
+        @media screen and (max-width: 768px) {
+            font-size: 24px;
+        }
+        span {
             color: $nav-second-color;
         }
     }
 
-    .active{
+    .active {
         border: 2px solid $nav-second-color;
     }
 
@@ -31,26 +34,46 @@ footer {
         justify-content: space-between;
         h1 {
             font-size: 24px;
+            @media screen and (max-width: 768px) {
+                font-size: 12px;
+                text-align: center;
+            }
         }
         ul {
             list-style: none;
             padding: 0.2rem;
+            @media screen and (max-width: 768px) {
+                font-size: 10px;
+                text-align: center;
+            }
             li {
                 margin: 1rem 0;
                 color: $gray-text;
                 cursor: pointer;
+                @media screen and (max-width: 768px) {
+                }
             }
         }
 
         .get-in-touch {
+            @media screen and (max-width: 768px) {
+                width: 25%;
+            }
             p {
                 margin: 2rem 0;
                 color: $gray-text;
+                @media screen and (max-width: 768px) {
+                    font-size: 10px;
+                    margin: 2rem 0 1rem 0;
+                }
             }
             h4 {
                 font-size: 24px;
                 color: #00b2ff;
                 cursor: pointer;
+                @media screen and (max-width: 768px) {
+                    font-size: 10px;
+                }
             }
         }
     }
@@ -72,7 +95,7 @@ footer {
         .social-media {
             display: flex;
             gap: 1.5rem;
-            img{
+            img {
                 color: $gray-text;
                 cursor: pointer;
             }
